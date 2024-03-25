@@ -19,7 +19,9 @@ https://api.telegram.org/bot<token>/deleteWebhook?url=https://example.com/bot.ph
 
 ### Обработка входящих сообщений
 Сообщения приходят POST запросом с типом application/json, получить его можно следующим образом:
+```php
 $data = file_get_contents('php://input');
 $data = json_decode($data, true);
-Для просмотра входящих данных сразу будем записывать их в файл:
+// Для просмотра входящих данных сразу будем записывать их в файл:
 file_put_contents(__DIR__ . '/message.txt', print_r($data, true));
+```
