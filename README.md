@@ -13,7 +13,7 @@
 ## Далее у нас два варианта работы через установку Webhook тогда все сообщения от пользователей из Telegram будут обрабатываться скриптом на сайте https://example.com/bot.php.
 ### Установка Webhook 
 https://api.telegram.org/bot<token>/setWebhook?url=https://example.com/bot.php
-Удаление Webhook 
+### Удаление Webhook 
 https://api.telegram.org/bot<token>/deleteWebhook?url=https://example.com/bot.php
 
 
